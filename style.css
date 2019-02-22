@@ -1,0 +1,152 @@
+.clear{
+	clear: both;
+}
+
+.mainWrapper{
+	font-family: "Segoe UI";
+	width: 1000px;
+	margin: auto;
+}
+
+
+.headWrapper{
+}
+	
+	.headWrapper img{
+		height:125px;
+	}
+	
+	.headWrapper ul {
+		display: table-row; /* эмуляция строки таблицы */
+	}
+	.headWrapper li {
+		width: auto; /* чтобы поведение было аналогичным ячейки таблицы */
+		display: table-cell; /* эмуляция ячейки таблицы */
+		text-align: center;	
+		height: 100px; /* высота пункта */
+		padding-left: 2px; /* визуальная граница между пунктами меню */
+		vertical-align: bottom; /* это нужно для случаев, когда в пункте меню текста больше чем на одну строку */
+		
+	}
+	.headWrapper li:first-child {
+		padding: 0; /* у первого элемента убираем отступ чтобы четко прилег к левой границе */
+	}
+	.headWrapper li>a {
+		width: 10000px; /* вот это заставляет наши псевдоячейки растянуться должным образом */
+		height: 100px;
+		display: table-cell; /* без этого тоже никак */
+		vertical-align: middle; /* вертикальное выравнивание текста */
+		color:#000;
+		font-size: 1.5em;
+		text-decoration: none;
+	}
+
+.contentSplitter{
+	border-top: 1px solid #fa6800;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	margin-top: 30px;
+	text-align: center;
+}
+	.contentSplitter span{
+		display: inline-block;
+		width: 200px;
+		background: #FFF;
+		position: relative;
+		top: -0.9em;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+
+.contentWrapper{
+	
+}
+	
+	.catHolder{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.catContainer{
+		margin-top: 10px;
+		margin-left: 10px;
+		border: 1px solid #000;
+		border-radius:15px;
+		float: left;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+		.catContainer:hover{
+			background: #efefef;
+			color:#000;
+		}
+		
+		.catContainer img{
+			margin-top: 10px;
+			width:130px;
+			border-radius:65px;
+		}
+		
+
+		.catContainer h4{
+			padding-bottom: 10px;
+			border-bottom:1px solid #000;
+			text-align: center;
+			margin: 5px 0;
+		}
+		
+		.catContainer input {
+			width:100%;
+			border:1px solid #fff;
+			background:#fa6800;
+			font-size:1em;
+		}
+		
+
+	.candHolder{
+		float: left;
+		width: 70%;
+		margin-left:2%;
+	}
+
+	.sidebar{
+		float: right;
+		width: 25%;
+		margin-right:2%;
+	}
+
+		.sideBlock{
+			margin-top: 10px;
+		}
+
+			.sideBlockHead{
+				padding: 5px;
+				background: #fa6800;
+				border-top-left-radius:10px;
+				border-top-right-radius:10px;
+				font-size: 1.18em;
+				font-weight: bold;
+				text-align:center;
+				color:#fff;
+			}
+
+			.sideBlockBody{
+				padding: 5px;
+				background: #EFEFEF;
+				padding-left: 10px;
+				border-bottom-left-radius:5px;
+				border-bottom-right-radius:5px;
+			}
+
+.footSplitter{
+	border-bottom: 1px solid #fa6800;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+			
+.footContainer{
+	margin-top: 10px;
+}
